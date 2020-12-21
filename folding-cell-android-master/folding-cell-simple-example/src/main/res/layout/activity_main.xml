@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <com.ramotion.foldingcell.FoldingCell
+            android:id="@+id/folding_cell0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/activity_my_page"
+                />
+
+            <FrameLayout
+                android:id="@+id/myprofile_title_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/myprofile_title_view"
+                    android:scaleType="fitXY"/>
+
+            </FrameLayout>
+
+        </com.ramotion.foldingcell.FoldingCell>
+
+        <com.ramotion.foldingcell.FoldingCell
+            android:id="@+id/folding_cell1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/activity_sns"
+                />
+
+            <FrameLayout
+                android:id="@+id/sns_title_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/insta_title_view"
+                    android:scaleType="fitXY"/>
+
+            </FrameLayout>
+
+        </com.ramotion.foldingcell.FoldingCell>
+
+        <com.ramotion.foldingcell.FoldingCell
+            android:id="@+id/folding_cell2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/activity_telecom"
+                />
+
+            <FrameLayout
+                android:id="@+id/telecom_title_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/telecom_title_view"
+                    android:scaleType="fitXY"/>
+
+            </FrameLayout>
+
+        </com.ramotion.foldingcell.FoldingCell>
+
+        <com.ramotion.foldingcell.FoldingCell
+            android:id="@+id/folding_cell3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/activity_bank_book"
+                />
+
+            <FrameLayout
+                android:id="@+id/bank_title_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/bank_title_view"
+                    android:scaleType="fitXY"/>
+
+            </FrameLayout>
+
+        </com.ramotion.foldingcell.FoldingCell>
+
+        <com.ramotion.foldingcell.FoldingCell
+            android:id="@+id/folding_cell4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/activity_call_list"
+                />
+
+            <FrameLayout
+                android:id="@+id/list_title_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/list_title_view"
+                    android:scaleType="fitXY"/>
+
+            </FrameLayout>
+
+        </com.ramotion.foldingcell.FoldingCell>
+    </LinearLayout>
+
+</ScrollView>
