@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_unique"
+        android:hint="완료되었습니다."
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#AAAAAA"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"/>
+
+    <TextView android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="1dp" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:maxLines="1"
+            android:id="@+id/et_mainBody"
+            android:background="@drawable/bg_gray"
+            android:hint="검색 ......"
+            android:textSize="16sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:onClick="popNameList"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/bg_gray"
+            android:text=" [이름/제목] "/>
+
+        <Button
+            android:id="@+id/btn_append"
+            android:onClick="mainClick"
+            android:background="@drawable/ic_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/btn_del"
+            android:onClick="mainClick"
+            android:background="@drawable/ic_del"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <TextView android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="1dp" />
+
+    <Button style="?android:buttonBarButtonStyle"
+        android:background="@drawable/bg_white"
+        android:id="@+id/btn_all"
+        android:onClick="view_all"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="모든 데이터 보기"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="1dp" />
+
+    <ListView
+        android:id="@+id/lv_sms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>
